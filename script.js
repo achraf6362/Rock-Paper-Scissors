@@ -90,7 +90,7 @@ function playGame() {
       
 You win the game!`)
   } else {
-    console.log(`Final Result: You ${humanScore} - ${computerScore} Computer
+    console.log(`\nFinal Result: You ${humanScore} - ${computerScore} Computer
     
 You lose the game!`)
   }
