@@ -96,6 +96,7 @@ You lose the game!`)
   }
 }
 
+//alert(`Open the console before starting by pressing "Ctrl+Shift+J"`);
 playGame();
 /* playGame();
 playGame();
