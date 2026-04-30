@@ -90,7 +90,7 @@ function playGame() {
     if (humanSelection === 'Invalid') { continue; } // If the user selects an invalid value, the round is ignored
     let computerSelection = getComputerChoice();
     
-    console.log(`\nRound ${Rounds++}`); // Increase by 1 in each round
+    console.log(`\nRound ${rounds++}`); // Increase by 1 in each round
 
     playRound(humanSelection, computerSelection);
   }
