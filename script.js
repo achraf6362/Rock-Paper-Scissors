@@ -12,12 +12,6 @@ function getHumanChoice() {
   } else {
     return 'Invalid';
   }
-
-  // Alternative method
-  /* if (humanChoice === '1') return 'Rock';
-  if (humanChoice === '2') return 'Paper';
-  if (humanChoice === '3') return 'Scissors';
-  return 'Invalid'; */
 }
 
 function getComputerChoice() {
@@ -29,15 +23,6 @@ function getComputerChoice() {
   : 'Paper';
 
   return computerChoice;
-
-  // Alternative method
-  /* if (randomNum < 0.33) {
-    return 'Rock';
-  } else if (randomNum > 0.66) {
-    return 'Scissors';
-  } else {
-    return 'Paper';
-  } */
 }
 
 // The score before the game begins
@@ -76,9 +61,6 @@ You lose! ${computerChoice} beats ${humanChoice}`);
   console.log(`You ${humanScore} - ${computerScore} Computer`);
 }
 
-// Alternative method
-/* let rounds = 1; */
-
 // The game with multiple rounds
 function playGame() {
   let rounds = 1; // Rounds start with 1
@@ -95,25 +77,15 @@ function playGame() {
     playRound(humanSelection, computerSelection);
   }
 
-  // Alternative method
-  /*  for(let i = 1; i <= 5; i++) {
-    console.log(`Round ${i}`);
-
-    let humanSelection = getHumanChoice();
-    let computerSelection = getComputerChoice();
-
-    playRound(humanSelection, computerSelection);
-  } */
-
   // Announcing the final winner and final score
-    // If the user wins
+  // If the user wins
   if (humanScore > computerScore) {
     console.log(`\nYou win the game!
       
 Final Result: You ${humanScore} - ${computerScore} Computer`)
   }
   
-    // If the user loses
+  // If the user loses
   else {
     console.log(`\nComputer win the game!
       
@@ -121,12 +93,4 @@ Final Result: You ${humanScore} - ${computerScore} Computer`)
   }
 }
 
-// Notice before starting the game
-/* alert(`Open the console before starting by pressing "Ctrl+Shift+J"`); */
-
 playGame();
-// An alternative method if the loop is not used
-/* playGame();
-playGame();
-playGame();
-playGame(); */
