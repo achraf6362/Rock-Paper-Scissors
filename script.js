@@ -4,9 +4,6 @@ userName.textContent = prompt('What is your name?', 'User');
 let humanChoice = document.querySelector('#human-choice');
 let computerChoice = document.querySelector('#computer-choice');
 
-let humanWins = document.querySelector('#human-wins');
-let computerWins = document.querySelector('#computer-wins');
-
 let humanScore = document.querySelector('#human-wins > .score');
 let computerScore = document.querySelector('#computer-wins > .score');
 let ties = document.querySelector('#ties > .score');
@@ -17,6 +14,7 @@ let tScore = 0;
 let rounds = 1;
 
 let btn = document.querySelectorAll('.btn');
+let reset = document.querySelector('#reset');
 let logs = document.querySelector('#logs');
 
 function getComputerChoice() {
@@ -91,4 +89,23 @@ function playGame(e) {
 }
 
 btn.forEach(button => {
-  button.addEventListener('click', playGame)});
+  button.addEventListener('click', playGame)
+});
+
+reset.addEventListener('click', () => {
+  hScore = 0;
+  cScore = 0;
+  tScore = 0;
+  rounds = 1;
+
+  humanScore.textContent = '0';
+  computerScore.textContent = '0';
+  ties.textContent = '0';
+
+  humanChoice.textContent = 'Choose one!';
+  computerChoice.textContent = '';
+
+  logs.innerHTML = '';
+
+  btn.forEach(button => button.disabled = false);
+});

@@ -61,13 +61,21 @@ section {
   width: 40%;
 }
 
-.btn {
-  background-color: #e6e6e6;
-  color: #3d3d3d;
+.btn, .reset-btn {
   border: 1px solid #3d3d3d;
   border-radius: 4px;
   padding: 8px 12px;
   cursor: pointer;
+}
+
+.btn {
+  background-color: #e6e6e6;
+  color: #3d3d3d;
+}
+
+.reset-btn {
+  background-color: #ef2525;
+  color: #f7dfdf;
 }
 
 .buttons {
@@ -87,6 +95,7 @@ section {
   border: 1px solid #3d3d3d;
   border-radius: 4px;
   padding: 20px;
+  margin-bottom: 16px;
 
   & > div {
     margin-bottom: 16px;
